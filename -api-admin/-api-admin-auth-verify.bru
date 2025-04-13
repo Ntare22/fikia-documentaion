@@ -1,0 +1,21 @@
+meta {
+  name: /api/admin/auth/verify
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost:8080/api/admin/auth/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImppbS5udGFyZUBnbWFpbC5jb20iLCJleHAiOjE3MzQ3NjkwOTYsImZpcnN0X25hbWUiOiJKaW0iLCJsYXN0X25hbWUiOiJKaW0iLCJyb2xlIjozLCJzdGF0dXMiOjJ9.M53V7gUOKWjh7bTeH_zeeGQXXnIkx85VJD9Aw8sWPTA
+  body: none
+  auth: apikey
+}
+
+params:query {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImppbS5udGFyZUBnbWFpbC5jb20iLCJleHAiOjE3MzQ3NjkwOTYsImZpcnN0X25hbWUiOiJKaW0iLCJsYXN0X25hbWUiOiJKaW0iLCJyb2xlIjozLCJzdGF0dXMiOjJ9.M53V7gUOKWjh7bTeH_zeeGQXXnIkx85VJD9Aw8sWPTA
+}
+
+auth:apikey {
+  key: X-API-Key
+  value: {{token}}
+  placement: header
+}

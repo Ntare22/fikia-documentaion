@@ -1,0 +1,15 @@
+meta {
+  name: /api/admin/list-admins
+  type: http
+  seq: 8
+}
+
+get {
+  url: http://localhost:8080/api/admin/list-admins
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGZpa2lhLmlvIiwiZXhwIjoxNzM2NjgyMDkyLCJmaXJzdF9uYW1lIjoiU3VwZXIiLCJsYXN0X25hbWUiOiJBZG1pbiIsInJvbGUiOjEsInN0YXR1cyI6MX0.GoJbe1FhIikOlkTI9XTpTyh-RNKsc6hs_7FHh5xykUM
+}

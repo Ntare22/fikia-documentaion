@@ -1,0 +1,21 @@
+meta {
+  name: /api/investor/verify
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8080/api/investor/auth/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImppbS5udGFyZUBnbWFpbC5jb20iLCJleHAiOjE3MzY5NDI2ODgsImZpcnN0X25hbWUiOiJKaW0iLCJsYXN0X25hbWUiOiJKaW0iLCJzdGF0dXMiOjJ9.7JxS_Vb-Kz81O5jYnYfgz-h9hSLlBGxezxTbseqzKm4
+  body: none
+  auth: apikey
+}
+
+params:query {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImppbS5udGFyZUBnbWFpbC5jb20iLCJleHAiOjE3MzY5NDI2ODgsImZpcnN0X25hbWUiOiJKaW0iLCJsYXN0X25hbWUiOiJKaW0iLCJzdGF0dXMiOjJ9.7JxS_Vb-Kz81O5jYnYfgz-h9hSLlBGxezxTbseqzKm4
+}
+
+auth:apikey {
+  key: X-API-Key
+  value: {{token}}
+  placement: header
+}

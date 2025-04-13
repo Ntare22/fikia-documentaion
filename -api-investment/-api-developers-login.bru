@@ -1,0 +1,17 @@
+meta {
+  name: /api/developers/login
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:8080/api/developers/login
+  body: none
+  auth: apikey
+}
+
+auth:apikey {
+  key: X-API-Key
+  value: {{token}}
+  placement: header
+}

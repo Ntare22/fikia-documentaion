@@ -1,0 +1,22 @@
+meta {
+  name: /api/investor/profile_1
+  type: http
+  seq: 6
+}
+
+put {
+  url: http://localhost:8080/api/investor/profile
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImppbS5udGFyZUBnbWFpbC5jb20iLCJleHAiOjE3MzQ5NjAyNzUsImZpcnN0X25hbWUiOiJKaW0iLCJsYXN0X25hbWUiOiJOdGFyZSIsInN0YXR1cyI6MH0.jLPTMGzmx4EtRR451qN_abX-WYXyP9BkgP8Ukk6ASFs
+}
+
+body:json {
+  {
+      "first_name": "Jim",
+      "last_name": ""
+  }
+}

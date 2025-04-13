@@ -1,0 +1,17 @@
+meta {
+  name: /api/developers/register
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:8080/api/developers/register
+  body: none
+  auth: apikey
+}
+
+auth:apikey {
+  key: X-API-Key
+  value: {{token}}
+  placement: header
+}

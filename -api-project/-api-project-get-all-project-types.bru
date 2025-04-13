@@ -1,0 +1,17 @@
+meta {
+  name: /api/project/get-all-project-types
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:8080/api/project/get-all-project-types
+  body: none
+  auth: apikey
+}
+
+auth:apikey {
+  key: X-API-Key
+  value: {{token}}
+  placement: header
+}

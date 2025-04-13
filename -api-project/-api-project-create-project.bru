@@ -1,0 +1,33 @@
+meta {
+  name: /api/project/create-project
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/api/project/create-project
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImppbS5udGFyZUBnbWFpbC5jb20iLCJleHAiOjE3NDI4MDE0NDIsImZpcnN0X25hbWUiOiJKaW0iLCJpZCI6IiIsImxhc3RfbmFtZSI6Ik50YXJlIiwicm9sZSI6Mywic3RhdHVzIjoxfQ.V293ejaQGm_jpxuBsyL-1Uz8LMajra4RwgPc5YwWGpk
+}
+
+body:json {
+  {
+      "title": "Test 1",
+      "description": "test",
+      "address": "test",
+      "city": "test",
+      "country": "test",
+      "project_type": 2,
+      "valuer": "Jim Ntare",
+      "valuer_email": "jim.ntare+12@gmail.com",
+      "land_id": "1874236",
+      "real_estate_developer": "",
+      "total_investment_amount": 10000000,
+      "listed_single_token_value": 10000,
+      "other_details": "test"
+  }
+}

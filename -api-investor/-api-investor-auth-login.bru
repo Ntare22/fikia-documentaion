@@ -1,0 +1,24 @@
+meta {
+  name: /api/investor/auth/login
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/api/investor/auth/login
+  body: json
+  auth: apikey
+}
+
+auth:apikey {
+  key: X-API-Key
+  value: {{token}}
+  placement: header
+}
+
+body:json {
+  {
+      "email": "jim.ntare@gmail.com",
+      "password": "Ntare@101"
+  }
+}

@@ -1,0 +1,25 @@
+meta {
+  name: /api/image/add
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/api/image/add
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImppbS5udGFyZUBnbWFpbC5jb20iLCJleHAiOjE3MzcwMTY4ODgsImZpcnN0X25hbWUiOiJKaW0iLCJpZCI6IiIsImxhc3RfbmFtZSI6Ik50YXJlIiwic3RhdHVzIjoxfQ.OpMrEvrBy83Y_HYi_p6EWv_qoTGQALiS5lRmGPlaW_8
+}
+
+body:json {
+  {
+      "image_link": "",
+      "caption": "",
+      "type": "",
+      "project_id": "",
+      "user_id": ""
+  }
+}

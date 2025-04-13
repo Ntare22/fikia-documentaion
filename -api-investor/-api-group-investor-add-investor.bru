@@ -1,0 +1,27 @@
+meta {
+  name: /api/group-investor/add-investor
+  type: http
+  seq: 10
+}
+
+put {
+  url: http://localhost:8080/api/group-investor/add-investor?id=ea7a877b-9c3d-4dc0-8d3b-04bc48ca23a0
+  body: json
+  auth: bearer
+}
+
+params:query {
+  id: ea7a877b-9c3d-4dc0-8d3b-04bc48ca23a0
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImppbS5udGFyZUBnbWFpbC5jb20iLCJleHAiOjE3MzY5NDgyMzksImZpcnN0X25hbWUiOiJKaW0iLCJsYXN0X25hbWUiOiJOdGFyZSIsInN0YXR1cyI6MX0.3lgnXtx9SOMmG30aw2OMA9Xd0jzXirHmAUhDBoQLqm0
+}
+
+body:json {
+  {
+      "first_name": "Jim",
+      "last_name": "Ntare",
+      "email": "jim@consumatech.com"
+  }
+}

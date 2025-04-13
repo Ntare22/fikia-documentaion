@@ -1,0 +1,22 @@
+meta {
+  name: /api/group-investor/create
+  type: http
+  seq: 8
+}
+
+post {
+  url: http://localhost:8080/api/group-investor/create
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImppbS5udGFyZUBnbWFpbC5jb20iLCJleHAiOjE3MzY5NDgyMzksImZpcnN0X25hbWUiOiJKaW0iLCJsYXN0X25hbWUiOiJOdGFyZSIsInN0YXR1cyI6MX0.3lgnXtx9SOMmG30aw2OMA9Xd0jzXirHmAUhDBoQLqm0
+}
+
+body:json {
+  {
+      "name": "Test Group",
+      "description": "Test groups something about description"
+  }
+}

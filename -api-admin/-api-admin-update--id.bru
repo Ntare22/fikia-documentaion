@@ -1,0 +1,21 @@
+meta {
+  name: /api/admin/update/:id
+  type: http
+  seq: 10
+}
+
+put {
+  url: http://localhost:8080/api/admin/update/:id
+  body: none
+  auth: apikey
+}
+
+params:path {
+  id: 
+}
+
+auth:apikey {
+  key: X-API-Key
+  value: {{token}}
+  placement: header
+}

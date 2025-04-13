@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Fikia API documentation",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

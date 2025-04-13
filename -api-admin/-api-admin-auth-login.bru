@@ -1,0 +1,24 @@
+meta {
+  name: /api/admin/auth/login
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:8080/api/admin/auth/login
+  body: json
+  auth: apikey
+}
+
+auth:apikey {
+  key: X-API-Key
+  value: {{token}}
+  placement: header
+}
+
+body:json {
+  {
+      "email": "jim.ntare@gmail.com",
+      "password": "Ntare@101"
+  }
+}

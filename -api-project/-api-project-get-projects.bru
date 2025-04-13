@@ -1,0 +1,15 @@
+meta {
+  name: /api/project/get-projects
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8080/api/project/get-projects
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImppbS5udGFyZUBnbWFpbC5jb20iLCJleHAiOjE3Mzc3MDA2NzIsImZpcnN0X25hbWUiOiJKaW0iLCJpZCI6IiIsImxhc3RfbmFtZSI6Ik50YXJlIiwicm9sZSI6Mywic3RhdHVzIjoxfQ.EFVbQci_-GgI_4wdbRdllaW_z8mbrrghzvjJHm9tI04
+}

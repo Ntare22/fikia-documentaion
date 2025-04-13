@@ -1,0 +1,17 @@
+meta {
+  name: /api/investments
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8080/api/investments
+  body: none
+  auth: apikey
+}
+
+auth:apikey {
+  key: X-API-Key
+  value: {{token}}
+  placement: header
+}

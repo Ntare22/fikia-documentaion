@@ -1,0 +1,15 @@
+meta {
+  name: /api/investor/profile
+  type: http
+  seq: 5
+}
+
+get {
+  url: http://localhost:8080/api/investor/profile
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImppbS5udGFyZUBnbWFpbC5jb20iLCJleHAiOjE3MzY5NDgyMzksImZpcnN0X25hbWUiOiJKaW0iLCJsYXN0X25hbWUiOiJOdGFyZSIsInN0YXR1cyI6MX0.3lgnXtx9SOMmG30aw2OMA9Xd0jzXirHmAUhDBoQLqm0
+}

@@ -1,0 +1,17 @@
+meta {
+  name: /api/reit/create-reit
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/api/reit/create-reit
+  body: none
+  auth: apikey
+}
+
+auth:apikey {
+  key: X-API-Key
+  value: {{token}}
+  placement: header
+}

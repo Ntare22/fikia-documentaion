@@ -1,0 +1,21 @@
+meta {
+  name: /api/admin/delete/:id
+  type: http
+  seq: 7
+}
+
+delete {
+  url: http://localhost:8080/api/admin/delete/:id
+  body: none
+  auth: apikey
+}
+
+params:path {
+  id: 
+}
+
+auth:apikey {
+  key: X-API-Key
+  value: {{token}}
+  placement: header
+}

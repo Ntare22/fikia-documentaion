@@ -1,0 +1,25 @@
+meta {
+  name: /api/group-investor/remove-investor
+  type: http
+  seq: 11
+}
+
+put {
+  url: http://localhost:8080/api/group-investor/remove-investor/:id?userId=d5d7dfb0-070d-4b7d-8cfd-32548a70ccca
+  body: none
+  auth: apikey
+}
+
+params:query {
+  userId: d5d7dfb0-070d-4b7d-8cfd-32548a70ccca
+}
+
+params:path {
+  id: ea7a877b-9c3d-4dc0-8d3b-04bc48ca23a0
+}
+
+auth:apikey {
+  key: X-API-Key
+  value: {{token}}
+  placement: header
+}

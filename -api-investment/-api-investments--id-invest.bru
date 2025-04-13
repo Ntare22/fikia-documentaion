@@ -1,0 +1,21 @@
+meta {
+  name: /api/investments/:id/invest
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8080/api/investments/:id/invest
+  body: none
+  auth: apikey
+}
+
+params:path {
+  id: 
+}
+
+auth:apikey {
+  key: X-API-Key
+  value: {{token}}
+  placement: header
+}
