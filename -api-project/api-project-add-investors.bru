@@ -1,11 +1,11 @@
 meta {
-  name: /api/admin/get-admins
+  name: /api/project/add-investors
   type: http
-  seq: 2
+  seq: 10
 }
 
-get {
-  url: http://localhost:8080/api/admin/get-admins
+post {
+  url: http://localhost:8080/api/project/add-investors
   body: none
   auth: apikey
 }

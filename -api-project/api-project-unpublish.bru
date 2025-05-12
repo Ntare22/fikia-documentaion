@@ -1,0 +1,17 @@
+meta {
+  name: /api/project/unpublish
+  type: http
+  seq: 9
+}
+
+put {
+  url: http://localhost:8080/api/project/unpublish
+  body: none
+  auth: apikey
+}
+
+auth:apikey {
+  key: X-API-Key
+  value: {{token}}
+  placement: header
+}

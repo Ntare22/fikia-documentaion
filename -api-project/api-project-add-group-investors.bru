@@ -1,0 +1,17 @@
+meta {
+  name: /api/project/add-group-investors
+  type: http
+  seq: 11
+}
+
+post {
+  url: http://localhost:8080/api/project/add-group-investors
+  body: none
+  auth: apikey
+}
+
+auth:apikey {
+  key: X-API-Key
+  value: {{token}}
+  placement: header
+}

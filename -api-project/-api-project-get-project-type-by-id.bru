@@ -5,9 +5,13 @@ meta {
 }
 
 get {
-  url: http://localhost:8080/api/project/get-project-type-by-id
+  url: http://localhost:8080/api/project/get-project-type-by-id/:id
   body: none
   auth: apikey
+}
+
+params:path {
+  id: 1
 }
 
 auth:apikey {

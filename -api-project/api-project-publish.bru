@@ -1,17 +1,13 @@
 meta {
-  name: /api/admin/approve/:id
+  name: /api/project/publish
   type: http
-  seq: 1
+  seq: 8
 }
 
 put {
-  url: http://localhost:8080/api/admin/approve/:id
+  url: http://localhost:8080/api/project/publish
   body: none
   auth: apikey
-}
-
-params:path {
-  id: 
 }
 
 auth:apikey {

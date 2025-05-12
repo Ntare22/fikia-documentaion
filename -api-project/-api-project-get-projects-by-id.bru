@@ -5,13 +5,15 @@ meta {
 }
 
 get {
-  url: http://localhost:8080/api/project/get-projects-by-id
+  url: http://localhost:8080/api/project/get-project-by-id/:id
   body: none
-  auth: apikey
+  auth: bearer
 }
 
-auth:apikey {
-  key: X-API-Key
-  value: {{token}}
-  placement: header
+params:path {
+  id: 24c878b4-fb49-470d-83b0-5a50419a66f8
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImppbS5udGFyZSs1QGdtYWlsLmNvbSIsImV4cCI6MTc0NjAwMTQxNiwiZmlyc3RfbmFtZSI6IkppbSIsImlkIjoiIiwibGFzdF9uYW1lIjoiTnRhcmUiLCJyb2xlIjoxLCJzdGF0dXMiOjF9.aF5-KWS55XVFPxczSSqvgoJKdj3uVo82_Yi6rKahSgg
 }

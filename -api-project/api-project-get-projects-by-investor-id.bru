@@ -1,17 +1,13 @@
 meta {
-  name: /api/admin/get-admin/:id
+  name: /api/project/get-projects-by-investor-id
   type: http
-  seq: 3
+  seq: 7
 }
 
 get {
-  url: http://localhost:8080/api/admin/get-admin/:id
+  url: http://localhost:8080/api/project/get-projects-by-investor-id
   body: none
   auth: apikey
-}
-
-params:path {
-  id: 
 }
 
 auth:apikey {
